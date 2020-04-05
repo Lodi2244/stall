@@ -2,7 +2,7 @@ module Para
   module Stall
     module Admin
       class ShippingNotesController < ::Para::Admin::ComponentController
-        before_filter :load_cart
+        before_action :load_cart
         authorize_resource :cart
         authorize_resource :shipment
 
